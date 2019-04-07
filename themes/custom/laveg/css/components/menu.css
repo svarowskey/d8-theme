@@ -1,0 +1,69 @@
+/**
+ * @file
+ * Visual styles for menu.
+ */
+
+.region-primary-menu ul.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none outside;
+  margin-left: 1em; /* LTR */
+  padding: 0;
+  text-align: left; /* LTR */
+
+}
+.region-primary-menu [dir="rtl"] ul.menu {
+  margin-left: 0;
+  margin-right: 1em;
+  text-align: right;
+}
+.region-primary-menu .menu-item--expanded {
+  list-style-image: url(../../../../../core/misc/menu-expanded.png);
+  list-style-type: circle;
+}
+.region-primary-menu .menu-item--collapsed {
+  list-style-image: url(../../../../../core/misc/menu-collapsed.png); /* LTR */
+  list-style-type: disc;
+}
+.region-primary-menu [dir="rtl"] .menu-item--collapsed {
+  list-style-image: url(../../../../../core/misc/menu-collapsed-rtl.png);
+}
+.region-primary-menu .menu-item {
+  padding-top: 0.2em;
+  margin: 0;
+}
+.region-primary-menu ul.menu a {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0;
+  display: block;
+}
+.region-primary-menu ul.menu a:hover {
+  color: navajowhite;
+}
+.region-primary-menu ul.menu a.is-active {
+  color: navajowhite;
+}
+.region-primary-menu ul.menu-margin_auto {
+  margin: 0 auto;
+}
+
+.region-content #block-services .menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 130px;
+}
+.region-content #block-services .menu li {
+  width: 33%;
+}
+.region-content #block-services .menu li a {
+  font-size: 13px;
+  color:  rgba(123, 123, 123, 255);;
+}
+.region-content #block-services .menu-margin_auto {
+  margin: auto;
+}

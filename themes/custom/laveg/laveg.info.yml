@@ -1,0 +1,22 @@
+name: Laveg
+type: theme
+base theme: classy
+description: 'This theme is founded base theme "Classy".'
+package: custom
+version: 1.0
+core: 8.x
+hidden: false
+logo: 'logo.png'
+
+regions:
+  headline: headline
+  header: header
+  primary_menu: primary_menu
+  content: content
+  sidebar: sidebar
+  footer: Footer
+
+
+libraries:
+  - laveg/base
+  - laveg/bootstrap
