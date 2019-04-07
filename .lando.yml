@@ -1,4 +1,4 @@
-name: drupal8
+name: d8-theme
 recipe: drupal8
 config:
   webroot: .
