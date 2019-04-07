@@ -1,0 +1,20 @@
+name: Ceiling theme
+type: theme
+base theme: classy
+description: 'Description Ceilings Theme'
+package: custom
+version: '8.x'
+core: 8.x
+hidden: false
+logo: 'logo.png'
+
+regions:
+  headline: headline
+  header: header
+  primary_menu: primary_menu
+  content: content
+  sidebar: sidebar
+  footer: Footer
+
+libraries:
+  - ceiling_theme/bootstrap
