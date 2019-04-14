@@ -17,6 +17,15 @@ base:
   css:
     theme:
       css/base.css: {}
+  js:
+    js/wow.min.js: {}
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core drupalSettings
+    - core/jquery.once
 
 yandexMap:
   version: VERSION
