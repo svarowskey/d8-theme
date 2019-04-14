@@ -1,0 +1,136 @@
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                {% if page.header_left %}
+                    {{ page.header_left }}
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                {% if page.header %}
+                    {{ page.header }}
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                {% if page.header_right %}
+                    {{ page.header_right }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrap">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="container">
+                    {% if page.primary_menu %}
+                        {{ page.primary_menu }}
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Title -->
+{% if page.page_title and not is_front %}
+    <div id="page-title">
+        <div id="page-title-inner">
+            <!-- start: Container -->
+            <div class="container">
+                {{ page.page_title }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!-- End Page Title -- >
+
+<!-- layout -->
+<div id="wrapper">
+    <!-- start: Container -->
+    <div class="container-fluid">
+        <!--start:content -->
+        <div class="row layout">
+            <!--- Start content -->
+            {% if page.content %}
+                <div class="content_layout">
+                    <div class="">
+                        {{ page.content }}
+                    </div>
+                </div>
+            {% endif %}
+            <!---End content -->
+        </div>
+        <!--End Content -->
+    </div>
+</div>
+<!-- End layout -->
+{% if page.characteristics %}
+    <div class="characteristics container-fluid">
+        <div class="row">
+            <div class="col-12">
+                {{ page.characteristics }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if page.make_measure %}
+    <div class="make-measure-wrap wow fadeInUp" data-wow-duration="2s">
+        <div class="container">
+            <div class="row justify-content-center">
+                {{ page.make_measure }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+<!-- Start: Yandex Map -->
+<div id="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="places">
+                    <span class="places__title">ПОТОЛКИ</span>
+                    <span class="places__address">г. Омск, ул.70 Лет Октября, д.20</span>
+                    <div class="places-phone">
+                        <img class="places-phone__img places-phone__img_margin-right"
+                             src="themes/custom/ceilings/images/icons/phone.png" alt="img">
+                        <a class="places-phone__link" href="tel:+73812503405">(3812) 503-405</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Yandex Map -->
+
+<!-- start: Footer -->
+<div class="footer-wrap">
+    <div class="container">
+        <div class="row">
+            <!-- Start Footer region -->
+            <div class="col-md-4">
+                {% if page.footer_left %}
+                    {{ page.footer_left }}
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                {% if page.footer %}
+                    {{ page.footer }}
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                {% if page.footer_right %}
+                    {{ page.footer_right }}
+                {% endif %}
+            </div>
+            <!-- End Footer region -->
+        </div>
+    </div>
+</div>
+<!--End Footer -->

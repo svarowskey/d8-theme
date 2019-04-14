@@ -11,3 +11,28 @@ bootstrap:
     - core/drupal
     - core drupalSettings
     - core/jquery.once
+
+base:
+  version: 1
+  css:
+    theme:
+      css/base.css: {}
+
+yandexMap:
+  version: VERSION
+  css:
+    theme:
+      css/yandexMap.css: {}
+  js:
+    js/yandexMap.js: {}
+  dependencies:
+  - core/jquery
+  - core/drupal.ajax
+  - core/drupal
+  - core drupalSettings
+  - core/jquery.once
+
+fonts:
+  version: VERSION
+  css:
+    fonts/akkalMajalla.css: {}

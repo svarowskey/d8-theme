@@ -18,7 +18,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/drupal/coder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyrdf/easyrdf" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ec-europa/multisite_drupal_standard" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fabpot/goutte" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />

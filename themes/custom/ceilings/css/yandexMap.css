@@ -1,0 +1,54 @@
+#map {
+  width: 100%;
+  height: 440px;
+  position: relative;
+}
+#map .places {
+  border-width: 2px;
+  border-color: #c1c1c1;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, .8);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 2, .08);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 2, .08);
+  position: absolute;
+  width: 427px;
+  height: 211px;
+  z-index: 100;
+  top: 100px;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+}
+#map .places-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map .places-phone__img {
+  object-fit: contain;
+}
+#map .places-phone__img_margin-right {
+  margin-right: 14px;
+}
+#map .places__title {
+  color: #274192;
+  font-size: 34px;
+  font-weight: bold;
+}
+#map .places__address {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1c1d1e;
+}
+#map .places-phone__link {
+  color: #c00;
+  font-size: 34px;
+  font-family: pneb;
+  font-weight: bold;
+}

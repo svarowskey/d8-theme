@@ -4,17 +4,24 @@ base theme: classy
 description: 'Description Ceilings Theme'
 package: custom
 version: '8.x'
-core: 8.x
+core: '8.x'
 hidden: false
 logo: 'logo.png'
 
 regions:
   headline: headline
-  header: header
-  primary_menu: primary_menu
-  content: content
-  sidebar: sidebar
+  header: Шапка (центральная часть)
+  header_left: Шапка (левая часть)
+  header_right: Шапка (правая часть)
+  primary_menu: Главное меню
+  content: Контент
+  characteristics: Характеристики
+  make_measure: Заказать замерщика
   footer: Footer
+  footer_left: Footer left part
+  footer_right: Footer right part
 
 libraries:
   - ceiling_theme/bootstrap
+  - ceiling_theme/base
+  - ceiling_theme/yandexMap
