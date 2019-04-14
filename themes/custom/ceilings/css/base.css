@@ -1,3 +1,9 @@
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
 .block p,
 .block h1,
 .block h2,
@@ -95,8 +101,12 @@
   justify-content: space-between;
 }
 .characteristics {
-  padding: 90px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
   font-family: Verdana, sans-serif;
+}
+.characteristics-row {
+  margin: 0;
 }
 .characteristics--title {
   font-size: 36px;
@@ -113,7 +123,15 @@
   text-align: center;
 }
 .characteristics .item .desc h3 {
-  font-size: 25px;
+  font-size: 22px;
+}
+.characteristics .item .desc span {
+  font-size: 14px;
+}
+.characteristics .item .img-block img {
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
 }
 .make-measure-wrap {
   background: #274092;
